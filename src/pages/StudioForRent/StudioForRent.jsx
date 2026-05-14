@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import '../../style/Home.css';
+import '../../style/home.css';
 import '../../style/ServiceDetails.css';
 
 
