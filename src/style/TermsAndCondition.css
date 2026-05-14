@@ -1,0 +1,345 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.documentation-container {
+  max-width: 100%;
+  margin: 0;
+}
+
+/* Header Styles */
+.doc-header {
+  background: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  border-bottom: 3px solid #34495e;
+}
+
+.doc-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.doc-logo {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Content Layout */
+.doc-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sidebar Styles */
+.doc-sidebar {
+  width: 280px;
+  background: #f8f9fa;
+  border-right: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 30px 0;
+}
+
+.sidebar-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6c757d;
+  padding: 0 25px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin: 0;
+}
+
+.sidebar-menu a {
+  display: block;
+  padding: 10px 25px;
+  color: #495057;
+  text-decoration: none;
+  font-size: 14px;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.sidebar-menu a:hover {
+  background: #e9ecef;
+  color: #2c3e50;
+  border-left-color: #3498db;
+}
+
+.sidebar-menu a.active {
+  background: #e3f2fd;
+  color: #2c3e50;
+  border-left-color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Main Content Styles */
+.doc-main {
+  flex: 1;
+  padding: 40px 60px;
+  background: white;
+}
+
+.doc-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.doc-meta {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.doc-intro {
+  background: #f8f9fa;
+  padding: 20px 25px;
+  border-left: 4px solid #2c3e50;
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: #495057;
+}
+
+/* Section Styles */
+.doc-section {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+
+.section-number {
+  color: #3498db;
+  margin-right: 10px;
+}
+
+.section-content {
+  font-size: 15px;
+  color: #495057;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Subsection Styles */
+.section-subsection {
+  margin-top: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #e0e0e0;
+}
+
+.subsection-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.subsection-content {
+  font-size: 15px;
+  color: #495057;
+  line-height: 1.8;
+}
+
+/* List Styles */
+.doc-list {
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+.doc-list li {
+  margin-bottom: 10px;
+  color: #495057;
+}
+
+/* Footer Styles */
+.doc-footer {
+  background: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+  padding: 30px 0;
+  margin-top: 60px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.footer-text {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #3498db;
+}
+
+/* Responsive Breakpoints */
+
+/* 1920px and below */
+@media (max-width: 1920px) {
+  .doc-main {
+    padding: 40px 50px;
+  }
+}
+
+/* 1440px and below */
+@media (max-width: 1440px) {
+  .doc-main {
+    padding: 35px 45px;
+  }
+}
+
+/* 1200px and below */
+@media (max-width: 1200px) {
+  .doc-content {
+    max-width: 100%;
+  }
+  
+  .doc-main {
+    padding: 30px 40px;
+  }
+}
+
+/* 992px and below (Tablets) */
+@media (max-width: 992px) {
+  .doc-sidebar {
+    display: none;
+  }
+  
+  .doc-main {
+    padding: 30px 30px;
+  }
+  
+  .doc-title {
+    font-size: 32px;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .doc-main {
+    padding: 25px 20px;
+  }
+  
+  .doc-title {
+    font-size: 28px;
+  }
+  
+  .section-title {
+    font-size: 22px;
+  }
+  
+  .doc-intro {
+    padding: 15px 20px;
+  }
+}
+
+/* 576px and below (Mobile) */
+@media (max-width: 576px) {
+  .doc-header .container {
+    padding: 0 15px;
+  }
+  
+  .doc-logo {
+    font-size: 20px;
+  }
+  
+  .doc-main {
+    padding: 20px 15px;
+  }
+  
+  .doc-title {
+    font-size: 26px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+  }
+  
+  .section-content {
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .subsection-content {
+    font-size: 14px;
+  }
+}
+
+/* 360px and below (Small Mobile) */
+@media (max-width: 360px) {
+  .doc-logo {
+    font-size: 18px;
+  }
+  
+  .doc-title {
+    font-size: 24px;
+  }
+  
+  .doc-main {
+    padding: 15px 12px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
